@@ -52,7 +52,7 @@
 1526468308 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\dodge.cpp
 	"Dodge.h"
 
-1526468308 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\dodge.h
+1526484274 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\dodge.h
 	<Defend.h>
 
 1526468383 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\escape.cpp
@@ -61,15 +61,28 @@
 1526468383 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\escape.h
 	<State.h>
 
-1526478671 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\bot.cpp
+1526485987 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\bot.cpp
 	"Bot.h"
 
-1526479939 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\bot.h
+1526487231 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\bot.h
 	"BotBrain.h"
+	"State.h"
+	"World.h"
 
-1526479939 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\botbrain.h
+1526487899 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\botbrain.h
 	"State.h"
 
 1526478764 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\botbrain.cpp
 	"BotBrain.h"
+
+1526480945 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\display.cpp
+	"Display.h"
+
+1526480992 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\display.h
+	<iostream>
+
+1526484301 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\world.cpp
+	"World.h"
+
+1526487231 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\world.h
 

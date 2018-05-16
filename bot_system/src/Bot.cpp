@@ -8,6 +8,8 @@ Bot::Bot()
     weapon=null;
     max_hp=100;
     max_mana=100;
+    range=5;
+    max_potion_amount=2;
 }
 
 Bot::~Bot()
