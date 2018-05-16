@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1514144174 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\main.cpp
+	<iostream>
+
+1526467691 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\attack.cpp
+	"Attack.h"
+
+1526476848 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\attack.h
+	<State.h>
+
+1526476975 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\state.h
+
+1526467673 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\state.cpp
+	"State.h"
+
+1526467735 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\arrowattack.cpp
+	"ArrowAttack.h"
+
+1526477523 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\arrowattack.h
+	<Attack.h>
+
+1526467713 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\grappleattack.cpp
+	"GrappleAttack.h"
+
+1526476848 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\grappleattack.h
+	<Attack.h>
+
+1526467839 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\idle.cpp
+	"Idle.h"
+
+1526467839 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\idle.h
+	<State.h>
+
+1526467863 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\search.cpp
+	"Search.h"
+
+1526478295 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\search.h
+	<State.h>
+
+1526467876 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\defend.cpp
+	"Defend.h"
+
+1526468222 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\defend.h
+	<State.h>
+
+1526467753 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\magicattack.cpp
+	"MagicAttack.h"
+
+1526476848 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\magicattack.h
+	<Attack.h>
+
+1526468308 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\dodge.cpp
+	"Dodge.h"
+
+1526468308 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\dodge.h
+	<Defend.h>
+
+1526468383 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\escape.cpp
+	"Escape.h"
+
+1526468383 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\escape.h
+	<State.h>
+
+1526478671 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\bot.cpp
+	"Bot.h"
+
+1526479939 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\bot.h
+	"BotBrain.h"
+
+1526479939 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\botbrain.h
+	"State.h"
+
+1526478764 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\botbrain.cpp
+	"BotBrain.h"
+
