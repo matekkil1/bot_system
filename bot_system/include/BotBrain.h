@@ -14,7 +14,8 @@ class BotBrain
     private:
         bool IfOponnentNear(int range, int hfo); // ion
         bool IfAttack(int hp, bool ion);
-        bool If
+
+       // bool If
 };
 
 #endif // BOTBRAIN_H

@@ -12,7 +12,7 @@ class Bot
         Bot();
         virtual ~Bot();
         BotBrain brain;
-
+        void Think(BotBrain brain);
     protected:
         int hp;
         int range;
