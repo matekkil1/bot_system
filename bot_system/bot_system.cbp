@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,35 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/ArrowAttack.h" />
+		<Unit filename="include/Attack.h" />
+		<Unit filename="include/Bot.h" />
+		<Unit filename="include/BotBrain.h" />
+		<Unit filename="include/Defend.h" />
+		<Unit filename="include/Display.h" />
+		<Unit filename="include/Dodge.h" />
+		<Unit filename="include/Escape.h" />
+		<Unit filename="include/GrappleAttack.h" />
+		<Unit filename="include/Idle.h" />
+		<Unit filename="include/MagicAttack.h" />
+		<Unit filename="include/Search.h" />
+		<Unit filename="include/State.h" />
+		<Unit filename="include/World.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ArrowAttack.cpp" />
+		<Unit filename="src/Attack.cpp" />
+		<Unit filename="src/Bot.cpp" />
+		<Unit filename="src/BotBrain.cpp" />
+		<Unit filename="src/Defend.cpp" />
+		<Unit filename="src/Display.cpp" />
+		<Unit filename="src/Dodge.cpp" />
+		<Unit filename="src/Escape.cpp" />
+		<Unit filename="src/GrappleAttack.cpp" />
+		<Unit filename="src/Idle.cpp" />
+		<Unit filename="src/MagicAttack.cpp" />
+		<Unit filename="src/Search.cpp" />
+		<Unit filename="src/State.cpp" />
+		<Unit filename="src/World.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

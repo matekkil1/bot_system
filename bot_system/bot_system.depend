@@ -8,7 +8,8 @@
 1526476848 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\attack.h
 	<State.h>
 
-1526476975 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\state.h
+1526570050 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\state.h
+	"Action.h"
 
 1526467673 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\state.cpp
 	"State.h"
@@ -64,12 +65,13 @@
 1526487899 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\bot.cpp
 	"Bot.h"
 
-1526491128 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\bot.h
+1526570050 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\bot.h
 	"BotBrain.h"
 	"State.h"
 	"World.h"
+	"Transition.h"
 
-1526499301 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\botbrain.h
+1526570050 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\botbrain.h
 	"State.h"
 
 1526478764 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\botbrain.cpp
@@ -85,4 +87,12 @@
 	"World.h"
 
 1526487231 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\world.h
+
+1526559792 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\action.h
+
+1526570074 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\transition.h
+	<iostream>
+
+1526559793 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\action.cpp
+	"Action.h"
 
