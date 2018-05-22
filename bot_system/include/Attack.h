@@ -7,7 +7,7 @@
 class Attack : public State
 {
     public:
-        Attack();
+        Attack(int);
         virtual ~Attack();
 
     protected:

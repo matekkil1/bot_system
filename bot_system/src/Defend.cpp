@@ -1,6 +1,6 @@
 #include "Defend.h"
 
-Defend::Defend()
+Defend::Defend(int howmanystates) : State(howmanystates)
 {
     //ctor
 }

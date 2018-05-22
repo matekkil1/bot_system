@@ -7,7 +7,7 @@
 class Escape : public State
 {
     public:
-        Escape();
+        Escape(int howmanystates);
         virtual ~Escape();
 
     protected:

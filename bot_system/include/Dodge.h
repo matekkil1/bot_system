@@ -7,7 +7,7 @@
 class Dodge : public Defend
 {
     public:
-        Dodge();
+        Dodge(int howmanystates);
         virtual ~Dodge();
 
     protected:

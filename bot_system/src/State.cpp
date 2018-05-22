@@ -1,11 +1,20 @@
 #include "State.h"
 
-State::State()
+State::State(int howmanystates)
 {
-    //ctor
+        ActionEnum *action = new ActionEnum[howmanystates];
+        actionlist = action;
 }
 
 State::~State()
 {
     //dtor
 }
+
+Display getStateAction()
+{
+//    return display;
+}
+        Display getEntryAction();
+        Display getExitAction();
+        Display getTransitions();

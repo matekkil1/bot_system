@@ -3,8 +3,8 @@
 
 #include "BotBrain.h"
 #include "State.h"
-#include "World.h"
 #include "Transition.h"
+
 enum Weapontype{axe,sword,bow,shield,null};
 class Bot
 {
@@ -25,9 +25,9 @@ class Bot
         int max_mana;
         int max_potion_amount;
         Weapontype weapon;
-        State *state;
-        State initialstate;
-        State currentstate;
+        //State *state;
+        //State initialstate;
+//State currentstate;
         Transition triggeredTransition;
         // update() { currentState = brain.getState(): }
 

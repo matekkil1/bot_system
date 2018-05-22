@@ -1,6 +1,6 @@
 #include "Attack.h"
 
-Attack::Attack()
+Attack::Attack(int howmanystates) :State(howmanystates)
 {
     //ctor
 }

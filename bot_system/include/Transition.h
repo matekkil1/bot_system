@@ -1,6 +1,7 @@
 #ifndef TRANSITION_H
 #define TRANSITION_H
 #include <iostream>
+#include "World.h"
 using namespace std;
 
 class Transition
@@ -8,12 +9,13 @@ class Transition
     public:
         Transition();
         virtual ~Transition();
-        string statetotransit;
+        string nextState;
+        string currentState;
         string someAction;
-
-        bool isTriggered()
-        def getTargetState()
-        def getAction()
+       // bool IfConditionsOk(World *world);
+        bool isTriggered(World *world);
+        string getTargetState();
+        string getAction();
     protected:
 
     private:

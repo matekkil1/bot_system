@@ -6,7 +6,7 @@
 class Search : public State
 {
     public:
-        Search();
+        Search(int howmanystates);
         virtual ~Search();
 
     protected:

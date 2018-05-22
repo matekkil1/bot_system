@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Action.h" />
 		<Unit filename="include/ArrowAttack.h" />
 		<Unit filename="include/Attack.h" />
 		<Unit filename="include/Bot.h" />
@@ -47,8 +48,11 @@
 		<Unit filename="include/MagicAttack.h" />
 		<Unit filename="include/Search.h" />
 		<Unit filename="include/State.h" />
+		<Unit filename="include/StateMachine.h" />
+		<Unit filename="include/Transition.h" />
 		<Unit filename="include/World.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Action.cpp" />
 		<Unit filename="src/ArrowAttack.cpp" />
 		<Unit filename="src/Attack.cpp" />
 		<Unit filename="src/Bot.cpp" />
@@ -62,6 +66,8 @@
 		<Unit filename="src/MagicAttack.cpp" />
 		<Unit filename="src/Search.cpp" />
 		<Unit filename="src/State.cpp" />
+		<Unit filename="src/StateMachine.cpp" />
+		<Unit filename="src/Transition.cpp" />
 		<Unit filename="src/World.cpp" />
 		<Extensions>
 			<code_completion />

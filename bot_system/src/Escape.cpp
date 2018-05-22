@@ -1,6 +1,6 @@
 #include "Escape.h"
 
-Escape::Escape()
+Escape::Escape(int howmanystates):State(howmanystates)
 {
     //ctor
 }

@@ -7,7 +7,7 @@
 class Idle : public State
 {
     public:
-        Idle();
+        Idle(int howmanystates);
         virtual ~Idle();
 
     protected:

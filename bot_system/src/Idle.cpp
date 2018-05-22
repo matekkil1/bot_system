@@ -1,6 +1,6 @@
 #include "Idle.h"
 
-Idle::Idle()
+Idle::Idle(int howmanystates):State(howmanystates)
 {
     //ctor
 }

@@ -1,9 +1,11 @@
 #include "ArrowAttack.h"
 
-ArrowAttack::ArrowAttack()
+ArrowAttack::ArrowAttack(int howmanystates) :Attack(howmanystates)
 {
-    //ctor
+
 }
+    //ctor
+
 
 ArrowAttack::~ArrowAttack()
 {

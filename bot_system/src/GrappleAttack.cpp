@@ -1,6 +1,6 @@
 #include "GrappleAttack.h"
 
-GrappleAttack::GrappleAttack()
+GrappleAttack::GrappleAttack(int howmanystates):Attack(howmanystates)
 {
     //ctor
 }
