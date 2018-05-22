@@ -9,3 +9,8 @@ Attack::~Attack()
 {
     //dtor
 }
+
+void Attack::Show()
+{
+    std::cout<<"Cos";
+}

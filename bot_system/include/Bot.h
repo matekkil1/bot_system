@@ -27,7 +27,7 @@ class Bot
         Weapontype weapon;
         //State *state;
         //State initialstate;
-//State currentstate;
+        //State currentstate;
         Transition triggeredTransition;
         // update() { currentState = brain.getState(): }
 
