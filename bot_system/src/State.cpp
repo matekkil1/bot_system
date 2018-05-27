@@ -1,6 +1,6 @@
 #include "State.h"
 
-State::State(Action * entryaction, Action * exitaction;)
+State::State(Action * entryaction, Action * exitaction, ActionList  *actionlist)
 {
       //  ActionEnum *action = new ActionEnum[howmanyactions];
 //        actionlist = action;

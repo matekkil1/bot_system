@@ -10,7 +10,7 @@ class State
         Action * entryaction;
         Action * exitaction;
         //Display display;
-        ActionList  actionlist;
+        ActionList  *actionlist;
         State();
 
         virtual ~State();
