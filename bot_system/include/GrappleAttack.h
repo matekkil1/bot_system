@@ -7,7 +7,7 @@
 class GrappleAttack : public Attack
 {
     public:
-        GrappleAttack(int howmanystates);
+        GrappleAttack(int howmanyactions);
         virtual ~GrappleAttack();
 
     protected:

@@ -1,6 +1,6 @@
 #include "Dodge.h"
 
-Dodge::Dodge(int howmanystates) :Defend(howmanystates)
+Dodge::Dodge(int howmanyactions) :Defend(howmanyactions)
 {
     //ctor
 }

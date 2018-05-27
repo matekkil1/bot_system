@@ -1,9 +1,9 @@
 #include "State.h"
 
-State::State(int howmanystates)
+State::State(Action * entryaction, Action * exitaction;)
 {
-        ActionEnum *action = new ActionEnum[howmanystates];
-        actionlist = action;
+      //  ActionEnum *action = new ActionEnum[howmanyactions];
+//        actionlist = action;
 }
 
 State::~State()
@@ -11,10 +11,16 @@ State::~State()
     //dtor
 }
 
-Display getStateAction()
+ActionList State::getStateActionlist();
 {
-//    return display;
+   return this->actionlist;
 }
-        Display getEntryAction();
-        Display getExitAction();
-        Display getTransitions();
+Action State::getEntryAction()
+{
+    return entryaction;
+}
+Action State::getExitAction()
+{
+    return this->exitaction;
+}
+      //  Display getTransitions();

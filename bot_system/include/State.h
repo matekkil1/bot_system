@@ -2,26 +2,17 @@
 #define STATE_H
 #include "Display.h"
 #include "Action.h"
-enum ActionEnum {
-HandAttack,
-SwordAttack,
-BowAttack,
-Jump,
-Run,
-Dodge,
-Crawl,
-HandDefend,
-GetHit,
-ShieldDefend
-};
+#include "ActionList.h"
 class State
 {
     public:
-        int howmanystates;
-        ActionEnum* actionlist;
-        Display display;
-        Action action;
-        State(int);
+        int howmanyactions;
+        Action * entryaction;
+        Action * exitaction;
+        //Display display;
+        ActionList  actionlist;
+        State();
+
         virtual ~State();
     protected:
          int walk_peace; // in %
@@ -29,10 +20,10 @@ class State
     private:
 
         int crouch_level; // in %
-        Display getStateAction();
-        Display getEntryAction();
-        Display getExitAction();
-        Display getTransitions();
+        ActionList getStateActionlist();
+        Action getEntryAction();
+        Action getExitAction();
+        //Transition getTransitions();
 };
 
 #endif // STATE_H

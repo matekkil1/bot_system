@@ -6,7 +6,7 @@
 class Defend : public State
 {
     public:
-        Defend(int howmanystates);
+        Defend(int howmanyactions);
         virtual ~Defend();
 
     protected:

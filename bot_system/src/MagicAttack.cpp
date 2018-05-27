@@ -1,6 +1,6 @@
 #include "MagicAttack.h"
 
-MagicAttack::MagicAttack(int howmanystates):Attack(howmanystates)
+MagicAttack::MagicAttack(int howmanyactions):Attack(howmanyactions)
 {
     //ctor
 }

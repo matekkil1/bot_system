@@ -1,6 +1,6 @@
 #include "Search.h"
 
-Search::Search(int howmanystates):State(howmanystates)
+Search::Search(int howmanyactions):State(howmanyactions)
 {
     //ctor
 }

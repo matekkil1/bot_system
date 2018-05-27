@@ -1,6 +1,6 @@
 #include "ArrowAttack.h"
 
-ArrowAttack::ArrowAttack(int howmanystates) :Attack(howmanystates)
+ArrowAttack::ArrowAttack(int howmanyactions) :Attack(howmanyactions)
 {
 
 }

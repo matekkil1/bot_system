@@ -7,7 +7,7 @@
 class ArrowAttack : public Attack
 {
     public:
-        ArrowAttack(int howmanystates);
+        ArrowAttack(int howmanyactions);
         virtual ~ArrowAttack();
 
     protected:
