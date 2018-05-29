@@ -1,6 +1,7 @@
 #include "Dodge.h"
 
-Dodge::Dodge(int howmanyactions) :Defend(howmanyactions)
+Dodge::Dodge(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:Defend(entryaction, exitaction, actionlist)
 {
     //ctor
 }

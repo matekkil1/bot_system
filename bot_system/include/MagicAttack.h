@@ -6,7 +6,7 @@
 class MagicAttack : public Attack
 {
     public:
-        MagicAttack(int howmanyactions);
+        MagicAttack(Action * entryaction, Action * exitaction, ActionList  *actionlist);
         virtual ~MagicAttack();
 
     protected:

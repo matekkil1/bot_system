@@ -1,6 +1,7 @@
 #include "ArrowAttack.h"
 
-ArrowAttack::ArrowAttack(int howmanyactions) :Attack(howmanyactions)
+ArrowAttack::ArrowAttack(Action* entryaction, Action* exitaction, ActionList* actionlist)
+:Attack(entryaction, exitaction, actionlist)
 {
 
 }

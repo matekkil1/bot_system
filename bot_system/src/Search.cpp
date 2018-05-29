@@ -1,6 +1,7 @@
 #include "Search.h"
 
-Search::Search(int howmanyactions):State(howmanyactions)
+Search::Search(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:State(entryaction, exitaction, actionlist)
 {
     //ctor
 }

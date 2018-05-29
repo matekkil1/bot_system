@@ -1,6 +1,7 @@
 #include "Defend.h"
 
-Defend::Defend(int howmanyactions) : State(howmanyactions)
+Defend::Defend(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:State(entryaction, exitaction, actionlist)
 {
     //ctor
 }

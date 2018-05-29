@@ -5,7 +5,7 @@
 class ActionList
 {
     public:
-        ActionList(int howmanyactions);
+        ActionList(int);
         virtual ~ActionList();
 
     protected:
@@ -13,6 +13,7 @@ class ActionList
     private:
         int howmanyactions;
         Action * actionlist;
+
 };
 
 #endif // ACTIONLIST_H

@@ -1,6 +1,7 @@
 #include "Escape.h"
 
-Escape::Escape(int howmanyactions):State(howmanyactions)
+Escape::Escape(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:State(entryaction, exitaction, actionlist)
 {
     //ctor
 }

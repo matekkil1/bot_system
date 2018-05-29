@@ -2,8 +2,9 @@
 
 State::State(Action * entryaction, Action * exitaction, ActionList  *actionlist)
 {
-      //  ActionEnum *action = new ActionEnum[howmanyactions];
-//        actionlist = action;
+      this->entryaction=entryaction;
+      this->exitaction=exitaction;
+      this->actionlist=actionlist;
 }
 
 State::~State()
@@ -11,15 +12,15 @@ State::~State()
     //dtor
 }
 
-ActionList State::getStateActionlist();
+ActionList* State::getStateActionlist()
 {
    return this->actionlist;
 }
-Action State::getEntryAction()
+Action* State::getEntryAction()
 {
-    return entryaction;
+    return this->entryaction;
 }
-Action State::getExitAction()
+Action* State::getExitAction()
 {
     return this->exitaction;
 }

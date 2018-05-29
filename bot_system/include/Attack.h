@@ -7,7 +7,7 @@
 class Attack : public State
 {
     public:
-        Attack(int);
+        Attack(Action * entryaction, Action * exitaction, ActionList  *actionlist);
         virtual ~Attack();
         void Show();
     protected:

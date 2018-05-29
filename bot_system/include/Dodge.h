@@ -7,7 +7,7 @@
 class Dodge : public Defend
 {
     public:
-        Dodge(int howmanyactions);
+        Dodge(Action * entryaction, Action * exitaction, ActionList  *actionlist);
         virtual ~Dodge();
 
     protected:

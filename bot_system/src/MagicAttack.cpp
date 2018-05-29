@@ -1,6 +1,7 @@
 #include "MagicAttack.h"
 
-MagicAttack::MagicAttack(int howmanyactions):Attack(howmanyactions)
+MagicAttack::MagicAttack(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:Attack(entryaction, exitaction, actionlist)
 {
     //ctor
 }

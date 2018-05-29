@@ -6,7 +6,7 @@
 class Search : public State
 {
     public:
-        Search(int howmanyactions);
+        Search(Action * entryaction, Action * exitaction, ActionList  *actionlist);
         virtual ~Search();
 
     protected:

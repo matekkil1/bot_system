@@ -2,7 +2,7 @@
 #define STATEMACHINE_H
 #include <iostream>
 #include "State.h"
-
+#include "Transition.h"
 #include "ArrowAttack.h"
 #include "Dodge.h"
 #include "Escape.h"
@@ -20,10 +20,10 @@ class StateMachine
         virtual ~StateMachine();
         string statelist[7];
         State * slist[7];
-
+        Transition * tlist[5];
         string initial;
-        State *initialState(int);
-        State *currentState(int);
+        State *initialState();
+        State *currentState();
 
     protected:
 

@@ -1,6 +1,7 @@
 #include "Idle.h"
 
-Idle::Idle(int howmanyactions):State(howmanyactions )
+Idle::Idle(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:State(entryaction, exitaction, actionlist)
 {
     //ctor
 }

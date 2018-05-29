@@ -7,7 +7,7 @@
 class Idle : public State
 {
     public:
-        Idle(int howmanyactions);
+        Idle(Action * entryaction, Action * exitaction, ActionList  *actionlist);
         virtual ~Idle();
 
     protected:

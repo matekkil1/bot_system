@@ -1,6 +1,7 @@
 #include "Attack.h"
 
-Attack::Attack(int howmanyactions) :State(howmanyactions)
+Attack::Attack(Action * entryaction, Action * exitaction, ActionList  *actionlist)
+:State(entryaction, exitaction, actionlist)
 {
     //ctor
 }

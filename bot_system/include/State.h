@@ -11,7 +11,7 @@ class State
         Action * exitaction;
         //Display display;
         ActionList  *actionlist;
-        State();
+        State(Action * entryaction, Action * exitaction, ActionList  *actionlist);
 
         virtual ~State();
     protected:
@@ -20,9 +20,9 @@ class State
     private:
 
         int crouch_level; // in %
-        ActionList getStateActionlist();
-        Action getEntryAction();
-        Action getExitAction();
+        ActionList* getStateActionlist();
+        Action* getEntryAction();
+        Action* getExitAction();
         //Transition getTransitions();
 };
 
