@@ -2,9 +2,9 @@
 
 State::State(Action * entryaction, Action * exitaction, ActionList  *actionlist)
 {
-      this->entryaction=entryaction;
-      this->exitaction=exitaction;
-      this->actionlist=actionlist;
+      this->entryaction =entryaction;
+      this->exitaction =exitaction;
+      this->actionlist =actionlist;
 }
 
 State::~State()

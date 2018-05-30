@@ -2,6 +2,7 @@
 #define TRANSITION_H
 #include <iostream>
 #include "World.h"
+#include "MakeActionList.h"
 using namespace std;
 
 class Transition

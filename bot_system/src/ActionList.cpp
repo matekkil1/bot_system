@@ -9,3 +9,8 @@ ActionList::~ActionList()
 {
     //dtor
 }
+
+void ActionList::AssignActions(Action action,int i)
+{
+        this->actionlist[i] = action;
+}

@@ -1,8 +1,9 @@
 # depslib dependency file v1.0
-1527003496 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\main.cpp
+1527690404 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\main.cpp
 	<iostream>
 	"Attack.h"
 	"StateMachine.h"
+	"MakeActionList.h"
 
 1527616336 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\attack.cpp
 	"Attack.h"
@@ -10,12 +11,12 @@
 1527529437 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\attack.h
 	<State.h>
 
-1527616699 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\state.h
+1527622405 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\state.h
 	"Display.h"
 	"Action.h"
 	"ActionList.h"
 
-1527616724 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\state.cpp
+1527622917 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\state.cpp
 	"State.h"
 
 1527616362 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\arrowattack.cpp
@@ -91,22 +92,24 @@
 
 1526487231 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\world.h
 
-1527435431 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\action.h
+1527687167 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\action.h
+	<iostream>
 
-1526570648 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\transition.h
+1527690392 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\transition.h
 	<iostream>
 	"World.h"
+	"MakeActionList.h"
 
-1526559793 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\action.cpp
+1527620909 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\action.cpp
 	"Action.h"
 
 1527432875 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\transition.cpp
 	"Transition.h"
 
-1527619660 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\statemachine.cpp
+1527622414 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\statemachine.cpp
 	"StateMachine.h"
 
-1527619119 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\statemachine.h
+1527699245 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\statemachine.h
 	<iostream>
 	"State.h"
 	"Transition.h"
@@ -117,15 +120,28 @@
 	"Idle.h"
 	"MagicAttack.h"
 	"Search.h"
-
-1527435885 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\actionlist.cpp
 	"ActionList.h"
 
-1527620590 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\actionlist.h
+1527623684 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\actionlist.cpp
+	"ActionList.h"
+
+1527688550 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\actionlist.h
 	"Action.h"
 
 1527618621 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\condition.cpp
 	"Condition.h"
 
 1527619025 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\condition.h
+
+1527690178 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\makeactionlist.cpp
+	"MakeActionList.h"
+
+1527690053 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\makeactionlist.h
+	"ActionList.h"
+
+1527690392 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\maketransitions.cpp
+	"MakeTransitions.h"
+
+1527689791 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\maketransitions.h
+	"Transition.h"
 

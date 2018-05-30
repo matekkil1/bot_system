@@ -1,5 +1,6 @@
 #ifndef ACTION_H
 #define ACTION_H
+#include <iostream>
 enum ActionEnum {
 HandAttack,
 SwordAttack,
@@ -18,10 +19,12 @@ class Action
     public:
         Action();
         virtual ~Action();
+        ActionEnum action;
+        std::string aaction;
     protected:
 
     private:
-        ActionEnum action;
+
 };
 
 #endif // ACTION_H

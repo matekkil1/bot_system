@@ -10,6 +10,7 @@
 #include "Idle.h"
 #include "MagicAttack.h"
 #include "Search.h"
+#include "ActionList.h"
 
 using namespace std;
 

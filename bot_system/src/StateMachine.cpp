@@ -11,6 +11,22 @@ StateMachine::StateMachine()
     //statelist[6]= "Jump"; DO  WYWYALENIA CHYBA
     statelist[6]= "Escape";
 
+    Action dodgeaction;
+    dodgeaction.action= Dodge;
+
+    Action handattackaction;
+    handattackaction.action= HandAttack;
+
+    Action runaction;
+    runaction.action= Run;
+
+    Action shieldefendaction;
+    shieldefendaction.action= ShieldDefend;
+
+
+
+
+
    /* slist[1] = new ArrowAttack(3);
     slist[6] = new Escape(2);
     slist[0] = new GrappleAttack(4);

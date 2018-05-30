@@ -7,12 +7,15 @@ class ActionList
     public:
         ActionList(int);
         virtual ~ActionList();
-
+        //void AssignActions(Action,int);
+        int howmanyactions;
+        Action * actionlist;
+        void AssignActions(Action, int);
     protected:
 
     private:
-        int howmanyactions;
-        Action * actionlist;
+
+
 
 };
 
