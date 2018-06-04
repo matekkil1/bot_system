@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1528138828 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\main.cpp
+1528146491 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\main.cpp
 	<iostream>
 	"Attack.h"
 	"StateMachine.h"
@@ -8,6 +8,7 @@
 	"EqualsCondition.h"
 	"GreaterThanCondition.h"
 	"ActionList.h"
+	"Test01.h"
 
 1527616336 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\attack.cpp
 	"Attack.h"
@@ -113,7 +114,7 @@
 	"Transition.h"
 	<iostream>
 
-1528123000 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\statemachine.cpp
+1528141444 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\statemachine.cpp
 	"StateMachine.h"
 
 1528140986 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\statemachine.h
@@ -163,4 +164,17 @@
 
 1528125496 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\equalscondition.h
 	<Condition.h>
+
+1528148656 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\test01.cpp
+	"Test01.h"
+	<iostream>
+	"Action.h"
+	"Condition.h"
+	"State.h"
+	"EqualsCondition.h"
+	"GreaterThanCondition.h"
+	"Attack.h"
+	"Defend.h"
+
+1528146512 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\test01.h
 
