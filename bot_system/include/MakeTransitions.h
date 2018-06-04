@@ -5,8 +5,10 @@
 class MakeTransitions
 {
     public:
-        MakeTransitions();
+        MakeTransitions(int);
         virtual ~MakeTransitions();
+
+        void CreateTransitionsList(int);
     protected:
 
     private:

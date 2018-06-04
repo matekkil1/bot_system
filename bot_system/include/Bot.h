@@ -28,7 +28,7 @@ class Bot
         //State *state;
         //State initialstate;
         //State currentstate;
-        Transition triggeredTransition;
+        //Transition triggeredTransition;
         // update() { currentState = brain.getState(): }
 
         /*

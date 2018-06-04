@@ -3,13 +3,15 @@
 #include "Display.h"
 #include "Action.h"
 #include "ActionList.h"
+using namespace std;
+
 class State
 {
     public:
         int howmanyactions;
         Action * entryaction;
+        string sth;
         Action * exitaction;
-        //Display display;
         ActionList  *actionlist;
         State(Action * entryaction, Action * exitaction, ActionList  *actionlist);
 

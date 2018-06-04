@@ -1,46 +1,35 @@
 #include "StateMachine.h"
 
-StateMachine::StateMachine()
+StateMachine::StateMachine(int states_Number,State **stab,int transitions_Number,Transition **ttab,State *Initialstate)
 {
-    statelist[0]= "GrappleAttack";
-    statelist[1]= "ArrowAttack";
-    statelist[2]= "MagicAttack";
-    statelist[3]= "Idle";
-    statelist[4]= "Search";
-    statelist[5]= "Dodge";
-    //statelist[6]= "Jump"; DO  WYWYALENIA CHYBA
-    statelist[6]= "Escape";
+states_number=states_Number;
+transitions_number=transitions_Number;
 
-    Action dodgeaction;
-    dodgeaction.action= Dodge;
+tlist = new Transition * [transitions_number];
+tlist = ttab;
+slist = new State * [states_number];
+slist = stab;
 
-    Action handattackaction;
-    handattackaction.action= HandAttack;
-
-    Action runaction;
-    runaction.action= Run;
-
-    Action shieldefendaction;
-    shieldefendaction.action= ShieldDefend;
-
-
-
-
-
-   /* slist[1] = new ArrowAttack(3);
-    slist[6] = new Escape(2);
-    slist[0] = new GrappleAttack(4);
-    slist[2]= new MagicAttack(4);
-    slist[4] = new Search(3);*
-
-    //Dodge * dodge = new Dodge(4); // TUTAJ JAKIS PROBLEM NIE WIEM SKAD ???
-    initial = "Idle";
-    slist[3] = new Idle(2);
-    //initialState = slist[3];*/
-
+initialState=Initialstate;
+currentState = initialState;
 }
 
 StateMachine::~StateMachine()
 {
     //dtor
+}
+bool StateMachine::GoStateMachine()
+{
+    for (int i=0; i<transitions_number;i++)
+    {
+       if( ( ((tlist[i])->IsTriggered()) == true ) && (((tlist[i])->currentState)== currentState) )
+       {
+           currentState=(tlist[i]->getTargetState());
+           break;
+       }
+       tlist[i]->getAction();
+       currentState->actionlist;
+    }
+
+    return true;
 }

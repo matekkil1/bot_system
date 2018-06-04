@@ -12,5 +12,5 @@ ActionList::~ActionList()
 
 void ActionList::AssignActions(Action action,int i)
 {
-        this->actionlist[i] = action;
+        actionlist[i] = action;
 }

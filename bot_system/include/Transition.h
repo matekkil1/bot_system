@@ -3,20 +3,28 @@
 #include <iostream>
 #include "World.h"
 #include "MakeActionList.h"
+#include "Condition.h"
+#include "State.h"
 using namespace std;
 
 class Transition
 {
     public:
-        Transition();
+        int a; // number of Conditions
+        Transition(int , Condition **, State*, State*);
         virtual ~Transition();
-        string nextState;
-        string currentState;
+        State *currentState;
+        State *nextState;
+        ////string nextState;
+        //string currentState;
         string someAction;
        // bool IfConditionsOk(World *world);
-        bool isTriggered(World *world);
-        string getTargetState();
+        //bool isTriggered(World *world);
+        State* getTargetState();
         string getAction();
+        Condition ** ConditionList;
+        bool IsTriggered();
+
     protected:
 
     private:

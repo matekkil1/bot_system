@@ -17,18 +17,19 @@ using namespace std;
 class StateMachine
 {
     public:
-        StateMachine();
+        StateMachine(int ,State **,int ,Transition **,State *);
         virtual ~StateMachine();
-        string statelist[7];
-        State * slist[7];
-        Transition * tlist[5];
-        string initial;
-        State *initialState();
-        State *currentState();
+        int states_number;
+        int transitions_number;
+        State ** slist;
+        Transition ** tlist;
+        State *initialState;
+        State *currentState;
 
     protected:
 
     private:
+        bool GoStateMachine();
 };
 
 #endif // STATEMACHINE_H
