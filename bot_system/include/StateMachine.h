@@ -19,6 +19,10 @@ class StateMachine
     public:
         StateMachine(int ,State **,int ,Transition **,State *);
         virtual ~StateMachine();
+        bool GoStateMachine();
+    protected:
+
+    private:
         int states_number;
         int transitions_number;
         State ** slist;
@@ -26,10 +30,6 @@ class StateMachine
         State *initialState;
         State *currentState;
 
-    protected:
-
-    private:
-        bool GoStateMachine();
 };
 
 #endif // STATEMACHINE_H

@@ -8,10 +8,11 @@
 #include "ActionList.h"
 #include "Test01.h"
 #include "Test02.h"
+#include "Test03.h"
 using namespace std;
 
 int main()
 {
-    Test02 test;
-    test.FunTest02();
+    Test03 test;
+    test.FunTest03();
 }

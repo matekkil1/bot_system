@@ -8,15 +8,15 @@ class ActionList
         ActionList(int);
         virtual ~ActionList();
         //void AssignActions(Action,int);
-        int howmanyactions;
-        Action * actionlist;
-        void AssignActions(Action, int);
+
+
+
     protected:
 
     private:
-
-
-
+    Action * actionlist;
+    int howmanyactions;
+    void AssignActions(Action, int);
 };
 
 #endif // ACTIONLIST_H

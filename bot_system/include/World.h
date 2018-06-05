@@ -7,7 +7,6 @@ class World
     public:
         World();
         virtual ~World();
-        int GiveWorldInfo(int n);
 
     protected:
 

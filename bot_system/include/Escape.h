@@ -13,6 +13,7 @@ class Escape : public State
     protected:
 
     private:
+        int escape_peace;
 };
 
 #endif // ESCAPE_H

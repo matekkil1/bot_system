@@ -13,7 +13,6 @@ Test03::~Test03()
  void Test03::FunTest03()
  {
      string text =" Spodziewany wynik to: ";
-    string exept = "Wyj¹tek to: ";
     double t[4][4]={{5,5,4,7}, {6,7,4,3}, {4,4,2.3,9}, {1,1,4,4}};
     double tcheck[4][5]={{1,1,1,1,1}, {0,0,0,0,0}, {1,1,1,1,1}, {0,0,0,0,0}};
 
@@ -86,10 +85,10 @@ Test03::~Test03()
     w_escape = &escape;
 
     State *stab[4];
-    tab[0]=w_attack;
-    tab[1]=w_defend;
-    tab[2]=w_dodge;
-    tab[3]=w_escape;
+    stab[0]=w_attack;
+    stab[1]=w_defend;
+    stab[2]=w_dodge;
+    stab[3]=w_escape;
 
 
     Transition* w_tran01;
@@ -113,11 +112,11 @@ Test03::~Test03()
 
 
     Transition *ttab[5];
-    tab[0]=w_tran01;
-    tab[1]=w_tran02;
-    tab[2]=w_tran03;
-    tab[3]=w_tran04;
-    tab[4]=w_tran05;
+    ttab[0]=w_tran01;
+    ttab[1]=w_tran02;
+    ttab[2]=w_tran03;
+    ttab[3]=w_tran04;
+    ttab[4]=w_tran05;
 
 
 
@@ -130,9 +129,10 @@ Test03::~Test03()
     cout<<endl<<endl;
 
     StateMachine * w_machine;
-    StateMachine machine(4,stab,5);
+    StateMachine machine(4,stab,5,ttab,w_attack);
     w_machine = &machine;
+    machine.GoStateMachine();
 
-
+    }
 
  }

@@ -18,7 +18,7 @@ Transition::~Transition()
      return nextState;
  }
 
-string Transition::getAction()
+Action* Transition::getAction()
 {
     return someAction;
 }

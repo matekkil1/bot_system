@@ -13,7 +13,6 @@ Test02::~Test02()
 
 void Test02::FunTest02()
 {   string text =" Spodziewany wynik to: ";
-    string exept = "Wyj¹tek to: ";
     double t[4][4]={{5,5,4,7}, {6,7,4,3}, {4,4,2.3,9}, {1,1,4,4}};
     double tcheck[4][5]={{1,1,1,1,1}, {0,0,0,0,0}, {1,1,1,1,1}, {0,0,0,0,0}};
 

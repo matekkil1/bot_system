@@ -9,7 +9,6 @@ class Attack : public State
     public:
         Attack(Action * entryaction, Action * exitaction, ActionList  *actionlist);
         virtual ~Attack();
-        void Show();
     protected:
     private:
         int attack_peace;

@@ -12,7 +12,7 @@ class Search : public State
     protected:
 
     private:
-
+    int searching_peace;
 
 };
 
