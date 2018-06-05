@@ -166,7 +166,7 @@
 1528125496 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\equalscondition.h
 	<Condition.h>
 
-1528183434 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\test01.cpp
+1528189801 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\test01.cpp
 	"Test01.h"
 	<iostream>
 	"Action.h"
@@ -177,22 +177,14 @@
 	"Attack.h"
 	"Defend.h"
 
-1528146512 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\test01.h
+1528185338 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\test01.h
 
 1528183723 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\test02.cpp
 	"Test02.h"
 
-1528182846 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\test02.h
+1528198340 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\test02.h
 	<iostream>
-	"Action.h"
-	"Condition.h"
-	"State.h"
-	"EqualsCondition.h"
 	"GreaterThanCondition.h"
-	"Attack.h"
-	"Defend.h"
-	"Dodge.h"
-	"Escape.h"
+	"EqualsCondition.h"
 	"StateMachine.h"
-	<iostream>
 

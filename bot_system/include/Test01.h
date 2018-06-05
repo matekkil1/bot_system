@@ -7,7 +7,7 @@ class Test01
     public:
         Test01();
         virtual ~Test01();
-        void FunTest01();
+        void FunTest01();   // checks functionality of Conditions
     protected:
 
     private:
