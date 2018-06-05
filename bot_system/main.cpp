@@ -7,10 +7,11 @@
 #include "GreaterThanCondition.h"
 #include "ActionList.h"
 #include "Test01.h"
+#include "Test02.h"
 using namespace std;
 
 int main()
 {
-    Test01 test;
-    test.FunTest01();
+    Test02 test;
+    test.FunTest02();
 }
