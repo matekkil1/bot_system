@@ -1,6 +1,5 @@
 #ifndef STATEMACHINE_H
 #define STATEMACHINE_H
-#include <iostream>
 #include "State.h"
 #include "Transition.h"
 #include "ArrowAttack.h"
@@ -12,7 +11,6 @@
 #include "Search.h"
 #include "ActionList.h"
 
-using namespace std;
 
 class StateMachine
 {

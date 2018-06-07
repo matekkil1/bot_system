@@ -102,7 +102,7 @@
 1528354328 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\action.h
 	<iostream>
 
-1528232433 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\transition.h
+1528360437 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\transition.h
 	<iostream>
 	"World.h"
 	"MakeActionList.h"
@@ -113,15 +113,13 @@
 1527620909 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\action.cpp
 	"Action.h"
 
-1528359992 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\transition.cpp
+1528360406 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\transition.cpp
 	"Transition.h"
-	<iostream>
 
 1528359398 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\statemachine.cpp
 	"StateMachine.h"
 
-1528359387 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\statemachine.h
-	<iostream>
+1528360437 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\statemachine.h
 	"State.h"
 	"Transition.h"
 	"ArrowAttack.h"
@@ -168,7 +166,7 @@
 1528125496 c:\users\lenovo\desktop\bot_system_dec\bot_system\include\equalscondition.h
 	<Condition.h>
 
-1528354795 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\test01.cpp
+1528360383 source:c:\users\lenovo\desktop\bot_system_dec\bot_system\src\test01.cpp
 	"Test01.h"
 	<iostream>
 	"Action.h"

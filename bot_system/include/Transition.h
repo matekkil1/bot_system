@@ -6,7 +6,7 @@
 #include "Condition.h"
 #include "State.h"
 #include "Action.h"
-using namespace std;
+
 
 class Transition
 {

@@ -63,19 +63,6 @@ void Test01::FunTest01()
     for(int k=0;k<4;k++) cout<< val[k];
     cout<<endl;
 
-
-
-
-   /* ActionList * w_lista;
-    ActionList listaakcji(1);
-    w_lista = &listaakcji;
-    Attack * w_attack;
-    Defend * w_defend;
-    Attack atack(wsk1,wsk2,w_lista);
-    w_attack = &atack;
-    ;
-    Defend defend(wsk2,wsk1,w_lista);
-    w_defend = & defend;*/
     }
     cout<<endl;
 }

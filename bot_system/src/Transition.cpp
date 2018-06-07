@@ -1,5 +1,4 @@
 #include "Transition.h"
-#include <iostream>
 Transition::Transition(int b,Condition **tab, State *CurrentState, State *NextState)
 {   a=b;
     currentState = CurrentState;
