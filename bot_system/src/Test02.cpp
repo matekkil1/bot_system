@@ -16,13 +16,6 @@ void Test02::FunTest02()
     double t[4][4]={{5,5,4,7}, {6,7,4,3}, {4,4,2.3,9}, {1,1,4,4}};
     double tcheck[4][5]={{1,1,1,1,1}, {0,0,0,0,0}, {1,1,1,1,1}, {0,0,0,0,0}};
 
-    for(int i=0;i<4;i++)
-    {
-    int a=t[i][0];
-    int b=t[i][1];
-    int d=t[i][2];
-    int c=t[i][3];
-
     Action * wsk1;
     Action akcja;
     wsk1 = &akcja;
@@ -50,19 +43,9 @@ void Test02::FunTest02()
     EqualsCondition *wsk3;
     EqualsCondition cond;
     wsk3 = &cond;
-    wsk3->CheckCondition(a,b);
-
     GreaterThanCondition * wsk4;
     GreaterThanCondition cond2;
     wsk4 = &cond2;
-    wsk4->CheckCondition(c,d);
-
-    Condition *tab[2];
-
-    tab[0] = wsk3;
-    tab[1] = wsk4;
-
-
     ActionList * w_list;
     ActionList loa(1);  //list of actions
     w_list = &loa;
@@ -72,8 +55,24 @@ void Test02::FunTest02()
     Dodge* w_dodge;
 
     Escape * w_escape;
+    cout<<"Test funkcjonalnosci klasy Transition"<<endl;
+    for(int i=0;i<4;i++)
+    {
+    int a=t[i][0];
+    int b=t[i][1];
+    int d=t[i][2];
+    int c=t[i][3];
 
 
+    wsk3->CheckCondition(a,b);
+
+
+    wsk4->CheckCondition(c,d);
+
+    Condition *tab[2];
+
+    tab[0] = wsk3;
+    tab[1] = wsk4;
 
     Attack atack(wsk1,wsk2,w_list);
     w_attack = &atack;

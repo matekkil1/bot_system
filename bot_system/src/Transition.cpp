@@ -11,7 +11,8 @@ Transition::Transition(int b,Condition **tab, State *CurrentState, State *NextSt
 
 Transition::~Transition()
 {
-    //dtor
+    delete ConditionList;
+
 }
  State* Transition::getTargetState()
  {

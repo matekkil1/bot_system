@@ -2,9 +2,9 @@
 
 State::State(Action * entryaction, Action * exitaction, ActionList  *actionlist)
 {
-      this->entryaction =entryaction;
-      this->exitaction =exitaction;
-      this->actionlist =actionlist;
+      entryAction =entryaction;
+      exitAction =exitaction;
+      actionList =actionlist;
 }
 
 State::~State()
@@ -14,14 +14,14 @@ State::~State()
 
 ActionList* State::getStateActionlist()
 {
-   return this->actionlist;
+   return actionList;
 }
 Action* State::getEntryAction()
 {
-    return this->entryaction;
+    return entryAction;
 }
 Action* State::getExitAction()
 {
-    return this->exitaction;
+    return exitAction;
 }
       //  Display getTransitions();

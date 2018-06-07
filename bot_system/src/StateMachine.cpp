@@ -16,7 +16,8 @@ currentState = initialState;
 
 StateMachine::~StateMachine()
 {
-    //dtor
+    delete tlist;
+    delete slist;
 }
 bool StateMachine::GoStateMachine()
 {
@@ -25,11 +26,16 @@ bool StateMachine::GoStateMachine()
        if( ( ((tlist[i])->IsTriggered()) == true ) && (((tlist[i])->currentState)== currentState) )
        {
            currentState=(tlist[i]->getTargetState());
-           break;
+           return true;
        }
        tlist[i]->getAction();
-       currentState->actionlist;
+       currentState->actionList;
     }
 
-    return true;
+    return false;
+}
+
+State * StateMachine::GetCurrentState()
+{
+    return currentState;
 }

@@ -19,7 +19,6 @@ class Action
         Action();
         virtual ~Action();
         ActionEnum action;
-        std::string aaction;
     protected:
 
     private:

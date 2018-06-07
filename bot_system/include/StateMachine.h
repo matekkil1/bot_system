@@ -20,6 +20,7 @@ class StateMachine
         StateMachine(int ,State **,int ,Transition **,State *);
         virtual ~StateMachine();
         bool GoStateMachine();
+        State * GetCurrentState();
     protected:
 
     private:

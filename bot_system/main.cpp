@@ -15,4 +15,9 @@ int main()
 {
     Test03 test;
     test.FunTest03();
+    Test01 testone;
+    testone.FunTest01();
+
+    Test02 testtwo;
+    testtwo.FunTest02();
 }

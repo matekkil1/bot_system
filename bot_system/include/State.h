@@ -9,23 +9,22 @@ class State
 {
     public:
         int howmanyactions;
-        Action * entryaction;
-        string sth;
-        Action * exitaction;
-        ActionList  *actionlist;
+        Action * entryAction;
+        Action * exitAction;
+        ActionList  *actionList;
         State(Action * entryaction, Action * exitaction, ActionList  *actionlist);
+        ActionList* getStateActionlist();
+        Action* getEntryAction();
+        Action* getExitAction();
 
         virtual ~State();
     protected:
-         int walk_peace; // in %
+
 
     private:
 
         int crouch_level; // in %
-        ActionList* getStateActionlist();
-        Action* getEntryAction();
-        Action* getExitAction();
-        //Transition getTransitions();
+        int walk_peace; // in %
 };
 
 #endif // STATE_H
