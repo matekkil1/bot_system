@@ -3,7 +3,7 @@
 Transition::Transition(int b,Condition **tab, State *CurrentState, State *NextState)
 {   a=b;
     currentState = CurrentState;
-    nextState = nextState;
+    nextState = NextState;
     ConditionList = new Condition * [b];
     ConditionList = tab;
 

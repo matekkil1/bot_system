@@ -11,7 +11,7 @@ slist = new State * [states_number];
 slist = stab;
 
 initialState=Initialstate;
-currentState = initialState;
+CurrentState = initialState;
 }
 
 StateMachine::~StateMachine()
@@ -23,13 +23,13 @@ bool StateMachine::GoStateMachine()
 {
     for (int i=0; i<transitions_number;i++)
     {
-       if( ( ((tlist[i])->IsTriggered()) == true ) && (((tlist[i])->currentState)== currentState) )
+       if( ( ((tlist[i])->IsTriggered()) == true ) && (((tlist[i])->currentState)== CurrentState) )
        {
-           currentState=(tlist[i]->getTargetState());
+           CurrentState=(tlist[i]->getTargetState());
            return true;
        }
        tlist[i]->getAction();
-       currentState->actionList;
+       CurrentState->actionList;
     }
 
     return false;
@@ -37,5 +37,5 @@ bool StateMachine::GoStateMachine()
 
 State * StateMachine::GetCurrentState()
 {
-    return currentState;
+    return CurrentState;
 }

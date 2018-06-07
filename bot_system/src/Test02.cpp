@@ -14,7 +14,7 @@ Test02::~Test02()
 void Test02::FunTest02()
 {   string text =" Spodziewany wynik to: ";
     double t[4][4]={{5,5,4,7}, {6,7,4,3}, {4,4,2.3,9}, {1,1,4,4}};
-    double tcheck[4][5]={{1,1,1,1,1}, {0,0,0,0,0}, {1,1,1,1,1}, {0,0,0,0,0}};
+    double tcheck[4][5]={{1,1,1,1,1}, {0,0,1,0,0}, {1,1,1,1,1}, {0,0,1,0,0}};
 
     Action * wsk1;
     Action akcja;
@@ -43,9 +43,15 @@ void Test02::FunTest02()
     EqualsCondition *wsk3;
     EqualsCondition cond;
     wsk3 = &cond;
+
     GreaterThanCondition * wsk4;
     GreaterThanCondition cond2;
     wsk4 = &cond2;
+
+    EqualsCondition *wsk9;
+    EqualsCondition cond3;
+    wsk9 = &cond3;
+
     ActionList * w_list;
     ActionList loa(1);  //list of actions
     w_list = &loa;
@@ -56,23 +62,15 @@ void Test02::FunTest02()
 
     Escape * w_escape;
     cout<<"Test funkcjonalnosci klasy Transition"<<endl;
-    for(int i=0;i<4;i++)
-    {
-    int a=t[i][0];
-    int b=t[i][1];
-    int d=t[i][2];
-    int c=t[i][3];
-
-
-    wsk3->CheckCondition(a,b);
-
-
-    wsk4->CheckCondition(c,d);
 
     Condition *tab[2];
 
     tab[0] = wsk3;
     tab[1] = wsk4;
+
+    Condition *tabs[1];
+    tabs[0] = wsk9;
+
 
     Attack atack(wsk1,wsk2,w_list);
     w_attack = &atack;
@@ -94,9 +92,20 @@ void Test02::FunTest02()
     Transition* tran05;
     Transition tran_n01(2,tab,w_attack,w_defend);
     Transition tran_n02(2,tab,w_attack,w_dodge);
-    Transition tran_n03(2,tab,w_dodge,w_escape);
+    Transition tran_n03(1,tabs,w_dodge,w_escape);
     Transition tran_n04(2,tab,w_attack,w_escape);
     Transition tran_n05(2,tab,w_escape,w_defend);
+    for(int i=0;i<4;i++)
+    {
+    int a=t[i][0];
+    int b=t[i][1];
+    int d=t[i][2];
+    int c=t[i][3];
+
+
+    wsk3->CheckCondition(a,b);
+    wsk4->CheckCondition(c,d);
+    wsk9->CheckCondition(5,5);
 
     cout<<tran_n01.IsTriggered();
     cout<<tran_n02.IsTriggered();
@@ -104,13 +113,7 @@ void Test02::FunTest02()
     cout<<tran_n04.IsTriggered();
     cout<<tran_n05.IsTriggered()<<text;
     for(int k=0;k<5;k++) cout<<tcheck[i][k];
-    cout<<endl<<endl;
-
-
-
-
-
-
-
+    cout<<endl;
     }
+    cout<<endl;
 }

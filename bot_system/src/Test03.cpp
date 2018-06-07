@@ -13,7 +13,7 @@ Test03::~Test03()
  void Test03::FunTest03()
  {
     string text =" Spodziewany wynik to: ";
-    double t[4][4]={{5,5,4,7}, {3,7,4,3}, {4,4,2.3,9}, {1,1,4,4}};
+    double t[8][4]={{5,5,4,7}, {3,3,0,3}, {4,4,2.3,9}, {1,1,4,4}, {3,2,0,3}, {4,4,4.3,9}, {1,7,4,4}};
 
     Action * wsk1;
     Action akcja;
@@ -101,7 +101,7 @@ Test03::~Test03()
     Transition tran_n01(2,tab,w_attack,w_defend);
     Transition tran_n02(1,tabs,w_attack,w_dodge);
     Transition tran_n03(2,tab,w_dodge,w_escape);
-    Transition tran_n04(2,tab,w_attack,w_escape);
+    Transition tran_n04(2,tab,w_defend,w_escape);
     Transition tran_n05(2,tab,w_escape,w_defend);
 
     w_tran01= &tran_n01;
@@ -123,8 +123,7 @@ Test03::~Test03()
 
 
     cout<<"Test funkcjonalnosci klasy StateMachine"<<endl;
-
-    for(int i=0;i<4;i++)
+    for(int i=0;i<8;i++)
     {
     int a=t[i][0];
     int b=t[i][1];
@@ -137,10 +136,9 @@ Test03::~Test03()
     wsk9->CheckCondition(a,d);
 
     cout<< machine.GoStateMachine();
-    w_currentstate = machine.GetCurrentState();
 
     }
-    cout<<text<<"1000"<<endl;
+    cout<<text<<"11100100"<<endl<<endl;
 
 
 

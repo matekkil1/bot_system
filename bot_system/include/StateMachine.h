@@ -29,7 +29,7 @@ class StateMachine
         State ** slist;
         Transition ** tlist;
         State *initialState;
-        State *currentState;
+        State *CurrentState;
 
 };
 
